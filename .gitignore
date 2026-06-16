@@ -1,3 +1,5 @@
+# ignore folder upload to git
+
 env/
 venv/
 .env
