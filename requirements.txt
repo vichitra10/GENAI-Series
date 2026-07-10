@@ -5,3 +5,5 @@ langchain-google-genai
 langchain-anthropic
 streamlit
 langchain-groq
+langchain-community
+langgraph
