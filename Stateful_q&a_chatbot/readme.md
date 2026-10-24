@@ -13,17 +13,10 @@ Vichitra Saini
 - **Task 3:** Basic Message History
 - **Task 4:** Trimming Chat History
 
-### Part 3: Building Api using FastApi
-- **Task 5:** Create Fast Application API
-- **Task 6:** FastApi + Groq Integration
-
-### Part 4: Serving the Groq App
-- **Task 7:** Run and Test FastAPI App Locally 
-- **Task 8:** Production Readiness (Basic)
-
-### Part 5: Mini Project Validation
-- **Task 9:** End-to-End demo
-- **Task 10:** Observations and Insights 
+### Part 3: Q&A Chatbot with message History
+- **Task 5:** Build Q&A Chatbot
+- **Task 6:** Build Stateful ChatBot Application
+ **Task 7:** Observation and Insights
 
 
 
@@ -45,9 +38,9 @@ Python 3
 ```text
 GEN_AI_Assignment_25/
 │
-├── groq_part_1.ipynb    # Part 1  Tasks 1&2
-├── groq_part_1.ipynb    # Part 3: Tasks 3&4
-├── Runnable.ipynb       # Part 4: Tasks 5-10
+├── message.ipynb        # Part 1  Tasks 1&2
+├── message.py           # Part 2: Tasks 3&4&5
+├── app.py               # Part 3: Tasks 5&6&7
 ├── requirements.txt     # Python dependencies
 ├── .env                 # Groq API key
 └── README.md
@@ -87,13 +80,7 @@ Open the notebooks in the following order:
 2. **`groq_part_2.ipynb`** — Tasks 3-4
 3. **`main.py`** — Tasks 5–10: 
 
-**`Run the FastAPI application using Uvicorn:`**
-
-**` uvicorn main:app --reload **`
-
-**` Open Swagger UI in your browser to test the API: **`
-
-**` http://127.0.0.1:8000/docs **`
+**`Run the app.py application using streamlit app: run`**
 
 Select the Python environment where the dependencies are installed as your Jupyter kernel.
 

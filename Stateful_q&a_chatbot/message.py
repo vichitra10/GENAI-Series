@@ -1,5 +1,6 @@
 ## Task 3: Basic Message History
 ## Task 4: Trimming Chat History
+## Task 5: Build Q&A Chatbot
 
 
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
@@ -15,7 +16,10 @@ llm = ChatGroq(
 )
 
 prompt = ChatPromptTemplate.from_messages([
-    ("system", "You are a helpful chatbot. Use the conversation history to answer naturally."),
+    ('''system", "You are a helpful chatbot. Use the conversation history to answer naturally.
+     Keep answer concise , around 100 words maximum,
+     unless the user request more detail
+     '''),
     MessagesPlaceholder(variable_name="history")
 ])
 
@@ -25,7 +29,6 @@ def trim_history(history):
     return trim_messages(
         history,
         max_tokens=500,
-        token_counter=llm,
         token_counter="approximate",
         strategy="last",
         allow_partial=False,
@@ -55,8 +58,10 @@ while True:
 
     # Save the AI response for the next turn
     history.append(AIMessage(content=response.content))
+    print("History before trimming:", len(history))
 
     history = trim_history(history)
+    print("History after trimming:", len(history))
     print("Token-limited history:", history)
 
 
