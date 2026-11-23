@@ -1,0 +1,12 @@
+langchain
+langchain-experimental
+ddgs
+langchain-ollama
+langchain-core
+langchain-community
+langchain-classic
+langsmith
+langchain-google-genai
+pypdf
+numexpr
+wikipedia

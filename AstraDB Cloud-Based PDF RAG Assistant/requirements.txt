@@ -1,0 +1,14 @@
+langchain
+langchain-experimental
+ddgs
+langchain-groq
+langchain-core
+langchain-community
+langchain-classic
+langsmith
+langchain-google-genai
+pypdf
+numexpr
+wikipedia
+langchain_huggingface
+huggingface_hub
