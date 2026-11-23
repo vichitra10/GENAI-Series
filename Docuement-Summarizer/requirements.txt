@@ -1,0 +1,10 @@
+langchain
+langchain-experimental
+ddgs
+langchain-groq
+langchain-core
+langchain-community
+langchain-classic
+langsmith
+langchain-google-genai
+pypdf
